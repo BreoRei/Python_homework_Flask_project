@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container m-3">
+    <h1>Заполните данные!</h1>
+    <form action="/form" method=post>
+        <label for=number>Введите число:</label><br>
+        <input type=number id=number name=number min="0" max="1000" placeholder=0-1000><br><br>
+        <input type=submit value=Отправить>
+    </form>
+</div>
+{% endblock content %}

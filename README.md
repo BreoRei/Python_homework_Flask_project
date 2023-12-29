@@ -64,4 +64,3 @@
 * ***[>> Код <<](homework/h_3/task_3.py)*** 
 * ***[>> Модуль <<](homework/h_3/models_3.py)***
 * ***[>> HTML <<](homework/h_3/templates/task_3_index.html)***
-* ***[>>Database<<](instance/student.db)***

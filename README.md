@@ -38,7 +38,7 @@
 * ***[>> HTML возраст > 18<<](homework/2/templates/age_big.html)***
 * ***[>> HTML возраст < 18<<](homework/2/templates/age_small.html)***
 
-## Taask_7
+## Task_7
 
 * Создать страницу, на которой будет форма для ввода числа и кнопка "Отправить"
 * При нажатии на кнопку будет произведено перенаправление на страницу с результатом, где будет выведено введенное число 
@@ -48,3 +48,7 @@
 * ***[>> Код <<](homework/2/task_07.py)*** 
 * ***[>> HTML форма запроса<<](homework/2/templates/task_07_form.html)***
 * ***[>> HTML результат<<](homework/2/templates/task_07_result.html)***
+
+# Homework_3
+
+## Task_

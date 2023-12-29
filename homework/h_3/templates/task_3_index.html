@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% for student in students %}
+        <div class="container m-3">
+            <hr>
+            <h6 class="font-weight-bold">Имя Фамилия: {{ student.name }} {{ student.last_name }}</h6>
+            <h6 class="font-weight-bold">email: {{ student.email }}</h6>
+            <h6 class="font-weight-bold">группа: {{ student.group }}</h6>
+            <table class="container">
+                <th>  Предмет  </th><th>  Оценка  </th>
+                {% for grd in greads %}
+                    {% if grd.student_id == student.id %}
+                        <tr></tr>
+                            <td>{{ grd.lesson_title }}</td>
+                            <td>{{ grd.grade }}</td>
+                    {% endif %}
+                {% endfor %}
+            </table>
+        </div>
+    {% endfor %}
+{% endblock content %}

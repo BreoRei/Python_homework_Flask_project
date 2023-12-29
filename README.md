@@ -9,7 +9,7 @@
 * Данные о новостях должны быть переданы в шаблон через
 контекст.
 
-Решение: ***[>> Код <<](homework/1/task_01.py)*** ***[>> HTML <<](homework/1/templates/task_01.html)***
+Решение: ***[>> Код <<](homework/h_1/task_01.py)*** ***[>> HTML <<](homework/1/templates/task_01.html)***
 
 ## Task_2
 
@@ -18,11 +18,11 @@
 * Например, создать страницы «Одежда», «Обувь» и «Куртка», используя базовый шаблон.
 
 Решение: 
-* ***[>> Код <<](homework/1/task_02.py)*** 
-* ***[>> HTML шаблон<<](homework/1/templates/task_02_index.html)***
-* ***[>> HTML одежда<<](homework/1/templates/task_02_cloth.html)***
-* ***[>> HTML обувь<<](homework/1/templates/task_02_shoes.html)***
-* ***[>> HTML куртка<<](homework/1/templates/task_02_jacket.html)***
+* ***[>> Код <<](homework/h_1/task_02.py)*** 
+* ***[>> HTML шаблон<<](homework/h_1/templates/task_02_index.html)***
+* ***[>> HTML одежда<<](homework/h_1/templates/task_02_cloth.html)***
+* ***[>> HTML обувь<<](homework/h_1/templates/task_02_shoes.html)***
+* ***[>> HTML куртка<<](homework/h_1/templates/task_02_jacket.html)***
 
 # Homework_2
 
@@ -33,10 +33,10 @@
 ошибкой в случае некорректного возраста
 
 Решение: 
-* ***[>> Код <<](homework/2/task_06.py)*** 
-* ***[>> HTML форма запроса<<](homework/2/templates/task_06_form.html)***
-* ***[>> HTML возраст > 18<<](homework/2/templates/age_big.html)***
-* ***[>> HTML возраст < 18<<](homework/2/templates/age_small.html)***
+* ***[>> Код <<](homework/h_2/task_06.py)*** 
+* ***[>> HTML форма запроса<<](homework/h_2/templates/task_06_form.html)***
+* ***[>> HTML возраст > 18<<](homework/h_2/templates/age_big.html)***
+* ***[>> HTML возраст < 18<<](homework/h_2/templates/age_small.html)***
 
 ## Task_7
 
@@ -45,10 +45,23 @@
 и его квадрат.
 
 Решение: 
-* ***[>> Код <<](homework/2/task_07.py)*** 
-* ***[>> HTML форма запроса<<](homework/2/templates/task_07_form.html)***
-* ***[>> HTML результат<<](homework/2/templates/task_07_result.html)***
+* ***[>> Код <<](homework/h_2/task_07.py)*** 
+* ***[>> HTML форма запроса<<](homework/h_2/templates/task_07_form.html)***
+* ***[>> HTML результат<<](homework/h_2/templates/task_07_result.html)***
 
 # Homework_3
 
-## Task_
+## Task_3
+
+* Создать базу данных для хранения информации о студентах и их оценках в учебном заведении.
+* База данных должна содержать две таблицы: "Студенты" и "Оценки".
+* В таблице "Студенты" должны быть следующие поля: id, имя, фамилия, группа и email.
+* В таблице "Оценки" должны быть следующие поля: id, id студента, название предмета и оценка.
+* Необходимо создать связь между таблицами "Студенты" и "Оценки".
+* Написать функцию-обработчик, которая будет выводить список всех студентов с указанием их оценок.
+
+Решение: 
+* ***[>> Код <<](homework/h_3/task_3.py)*** 
+* ***[>> Модуль <<](homework/h_3/models_3.py)***
+* ***[>> HTML <<](homework/h_3/templates/task_3_index.html)***
+* ***[>>Database<<](instance/student.db)***

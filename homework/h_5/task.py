@@ -30,8 +30,10 @@ async def get_all_stocks():
 @app.get("/action/{stock_id}", response_model=Stock)
 async def get_stock(stock_id: int):
     filtered_stock = [stock for stock in stocks if stock.id == stock_id]
+
     if filtered_stock is None:
         return {"message": "No stocks found"}
+
     stock = filtered_stock[0]
     return stock
 
@@ -45,8 +47,10 @@ async def create_stock(stock: Stock):
 @app.put("/action/{stock_id}")
 async def update_stock(stock_id: int, updated_stock: Stock_new):
     filtered_stock = [stock for stock in stocks if stock.id == stock_id]
+
     if filtered_stock is None:
         return {"message": "No stocks found"}
+
     stock = filtered_stock[0]
     stock.name = updated_stock.name
     stock.price = updated_stock.price
@@ -57,8 +61,10 @@ async def update_stock(stock_id: int, updated_stock: Stock_new):
 @app.delete("/action/{stock_id}")
 async def delete_stock(stock_id: int):
     filtered_stock = [stock for stock in stocks if stock.id == stock_id]
+
     if filtered_stock is None:
         return {"message": "No stocks found"}
+
     stock = filtered_stock[0]
     stocks.remove(stock)
     return {"message": "Stock deleted successfully"}
